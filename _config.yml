@@ -23,7 +23,7 @@ email: greenie.green@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is an example site for use of static sites with a dynamic firebase source for some content.
 baseurl: "/Race-Example" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://tookitaway.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: neongreenie
 github_username:  davegreen
 
