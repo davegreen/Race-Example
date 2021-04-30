@@ -106,7 +106,8 @@ function initApp() {
             var isAnonymous = user.isAnonymous;
             var uid = user.uid;
             var providerData = user.providerData;
-            document.getElementById('quickstart-sign-in-status').textContent = 'Signed in';
+
+            document.getElementById('quickstart-sign-in-status').textContent = `Signed in as ${email}`;
             document.getElementById('quickstart-sign-in').textContent = 'Sign out';
 
             hide(document.getElementById('quickstart-password-reset'));
