@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: " en" }}">
+
+{%- include head.html -%}
+
+<body>
+
+  {%- include header.html -%}
+
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+      {{ content }}
+    </div>
+  </main>
+
+  <div class="wrapper">
+    <input style="display:inline;width:auto;" type="text" id="email" name="email" placeholder="Email" />
+    <input style="display:inline;width:auto;" type="password" id="password" name="password" placeholder="Password" />
+    Sign-in status: <span id="quickstart-sign-in-status">Unknown</span>
+    <button disabled id="quickstart-sign-in" name="signin">Sign In</button>
+    <button id="quickstart-sign-up" name="signup">Sign Up</button>
+    <!--<button disabled id="quickstart-verify-email" name="verify-email">Send Email Verification</button>-->
+    <button id="quickstart-password-reset" name="verify-email">Send Password Reset Email</button>
+    <!-- Container where we'll display the user details -->
+    <!--<div>
+      <div><code>currentUser</code></div>
+      <pre><code id="quickstart-account-details">null</code></pre>
+    </div>-->
+  </div>
+  <br />
+
+  {%- include footer.html -%}
+
+</body>
+</html>

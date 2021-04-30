@@ -108,6 +108,11 @@ function initApp() {
             var providerData = user.providerData;
             document.getElementById('quickstart-sign-in-status').textContent = 'Signed in';
             document.getElementById('quickstart-sign-in').textContent = 'Sign out';
+
+            hide(document.getElementById('quickstart-password-reset'));
+            hide(document.getElementById('quickstart-sign-up'));
+            hide(document.getElementById('email'));
+            hide(document.getElementById('password'));
             //document.getElementById('quickstart-account-details').textContent = JSON.stringify(user, null, '  ');
 
             //if (!emailVerified) {
@@ -117,6 +122,11 @@ function initApp() {
             // User is signed out.
             document.getElementById('quickstart-sign-in-status').textContent = 'Signed out';
             document.getElementById('quickstart-sign-in').textContent = 'Sign in';
+
+            show(document.getElementById('quickstart-password-reset'));
+            show(document.getElementById('quickstart-sign-up'));
+            show(document.getElementById('email'));
+            show(document.getElementById('password'));
             //document.getElementById('quickstart-account-details').textContent = 'null';
         }
         document.getElementById('quickstart-sign-in').disabled = false;
