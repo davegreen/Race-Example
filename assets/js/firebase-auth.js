@@ -93,7 +93,7 @@ function sendPasswordReset() {
  *  - firebase.auth().onAuthStateChanged: This listener is called when the user is signed in or
  *    out, and that is where we update the UI.
  */
-function initApp() {
+function initAuth() {
     // Listening for auth state changes.
     firebase.auth().onAuthStateChanged(function (user) {
         //document.getElementById('quickstart-verify-email').disabled = true;
@@ -140,5 +140,5 @@ function initApp() {
 }
 
 window.onload = function () {
-    initApp();
+    initAuth();
 };
